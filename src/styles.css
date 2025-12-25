@@ -1,0 +1,158 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.content{
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+    min-height: 100vh;
+}
+.toDo{
+    display: flex;
+    flex-direction: column;
+    background-color:lightsteelblue;
+    color: white;
+    min-height: 100vh;
+    align-items: stretch; /* so items fill width */
+    padding: 24px;
+    color: #0f172a;
+    
+}
+.toDo h1 { color: #0f172a; }
+
+.toDoButton{
+    width: 100px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: rgb(129, 146, 168);
+    border: none;
+}
+
+.taskFlow{
+    background-color:dimgray;
+    color: white;
+    font-size: 15px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 100vh;
+    gap: 15px;
+}
+
+.taskFlow button{
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    border: 3px lightsteelblue solid;
+    cursor: pointer;
+    color: white;
+    
+    border-radius: 15px;
+
+    
+}
+
+dialog{
+    background: none;
+    border: none;
+}
+#todo-dialog-form{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height:600px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 150px;
+    background-color: rgb(129, 146, 168);
+    border-radius: 25px;
+    border: 3px black solid;
+    padding: 15px;
+    
+}
+
+#toDoForm .box{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#toDoForm .buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+.items{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+.box{
+    border: 2px white solid;
+}
+
+.toDoBox{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(129, 146, 168);
+    border: 2px white solid;
+    padding: 25px;
+    margin: 16px 0;              /* less random spacing */
+    border-radius: 16px;
+    border: 1px solid rgba(255,255,255,0.6);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.completeBtn, .deleteBtn {
+    border: none;
+    border-radius: 999px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-weight: 700;
+  }
+.completeBtn {
+  background: #22c55e;
+  color: white;
+}
+
+.deleteBtn {
+  background: #ef4444;
+  color: white;
+}
+
+.completedTask {
+  opacity: 0.7;
+}
+
+.completedTask .left h1 {
+  text-decoration: line-through;
+}
+
+.notes {
+  margin-top: 10px;
+  font-size: 14px;
+  color: rgba(255,255,255,0.9);
+}
+.actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
